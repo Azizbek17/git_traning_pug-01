@@ -1,0 +1,130 @@
+.header
+    background: url(../img/header_bg.jpg) no-repeat
+    background-size: cover
+   
+    &__container
+        position: relative
+        padding-top: rem(70px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 200px
+    &__logo
+        flex: 1 1 15%
+    &__nav-wrap
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+    &__nav
+        flex: 1 1 55%
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &--hide
+        visibility: hidden
+        display: none
+        +laptop
+            display: flex
+            visibility: visible
+    &__wrap-img
+        width: 100%
+    &__link
+        margin-left: 20px
+        color: #fff
+        font-size: rem(16px)
+        font-family: $font_default
+        font-weight: regular
+        
+        &:hover
+            color: $second_color
+    &__btn
+        text-decoration: none
+        border: 1px solid #fff
+        border-radius: rem(30px)
+        padding: 16px 20px
+        box-sizing: border-box
+        color: #fff
+        font-family: $font_default
+        font-weight: semi-bold
+        &:hover
+            color: $second_color
+            border-color: $second_color 
+.hamburger
+    z-index: 59
+    +laptop
+        visibility: hidden
+.mobile
+    visibility: hidden
+    position: absolute
+    z-index: 10
+    top: 0 
+    left: -500px
+    width: 100vw
+    min-height: 200vh
+    padding: 30vh 40%
+    text-align: center
+    font-size: rem(24px)
+    background: $second_color
+          
+    &__link
+        display: inline-block
+        margin: 20px 0
+        &:hover
+            color: $second_color
+.mobile.is-active
+    visibility: visible
+    left: 0
+    
+.link--reset
+    text-decoration: none
+.header
+    &__Main-title
+        font-family: $font_default
+        font-weight: bold
+        color: white
+        text-transform: uppercase
+        font-size: rem(48px)
+    &__title
+        font-family: $font_default
+        font-weight: 300
+        color: white
+        text-transform: uppercase
+        font-size: rem(36px)
+    &__text
+        font-family: $font_default
+        font-weight: regular
+        color: white
+        font-size: rem(18px)
+    &__svg
+        margin-left: 5px
+    &__box
+        display: flex
+    &--align
+        transform: translateY(-100px)
+        
+.header__button
+    background: $accent_color
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 0 20px
+    width: 170px
+    height: 60px
+    border-radius: 7px
+    border: none
+    cursor: pointer
+    color: white
+    text-align: left
+    font-size: rem(9px) 
+    margin-left: 5px 
+    +tablet
+        margin-left: 20px
+.header--colored
+    font-weight: 300
+    color: $second_color
+.header--bold
+    font-weight: bold
+.container--flex
+    display: flex
+
+
