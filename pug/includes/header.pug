@@ -1,1 +1,49 @@
 header.header
+	.container.header__container
+		.header__logo
+			img.header__img(src='img/logo.svg' alt='no')
+		nav.header__nav.header--hide
+			.header__nav-wrap
+				a.header__link.link--reset(href='#') Home
+				a.header__link.link--reset(href='#') Feature
+				a.header__link.link--reset(href='#') Pricing
+				a.header__link.link--reset(href='#') Team
+				a.header__link.link--reset(href='#') Blog
+				a.header__link.link--reset(href='#') Contact
+			a.header__btn(href='#') Get the App
+		.mobile
+			a.mobile__link.link--reset(href='#') Home
+			a.mobile__link.link--reset(href='#') Feature
+			a.mobile__link.link--reset(href='#') Pricing
+			a.mobile__link.link--reset(href='#') Team
+			a.mobile__link.link--reset(href='#') Blog
+			a.mobile__link.link--reset(href='#') Contact
+		button.hamburger.hamburger--3dx(type='button')
+			span.hamburger-box
+				span.hamburger-inner
+	.container.container--flex
+		.header__wrap
+			h2.header__Main-title
+				i.header--colored
+					b.header--bold App
+					| nest
+				|  Best Mobile
+			h2.header__title App Landing Page
+			p.header__text
+				| Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+				| nisi ut aliquip ex ea commodo consequat.
+			.header__box
+				button.header__button(href='#')
+					img.header__svg(src='img/header/Apple.svg' alt='no')
+					.header__inline
+						div Download from
+						div Apple Store
+				button.header__button(href='#')
+					img.header__svg(src='img/header/Apple.svg' alt='no')
+					.header__inline
+						div Download from
+						div Apple Store
+		.header__wrap.header--align
+			.header__wrap-img
+				img.header__bg(src='img/iphone.png' alt='no')
+
