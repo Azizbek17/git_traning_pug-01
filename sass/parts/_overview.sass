@@ -1,0 +1,71 @@
+.overview
+  background: #fbfbfb
+  margin-top: 22px
+
+.container
+  width: 1170px
+  margin: 0 auto
+
+.overview__container
+  display: flex
+  justify-content: center
+  align-items: center
+
+.overview__card
+  width: 206px
+  background: #fbfbfb
+  margin: 80px auto 55px
+
+.card__icon
+  background: #24c657
+  width: 85px
+  height: 85px
+  border-radius: 42px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: auto
+
+.card-icon__wrap
+  margin: auto
+  position: relative
+  z-index: 10
+  width: 85px
+  height: 85px
+
+  &::before
+    content: ''
+    position: absolute
+    background: #fbfbfb
+    width: calc(100% + 20px)
+    height: calc(100% + 20px)
+    top: -10px
+    left: -10px
+    z-index: -1
+    border-radius: 50%
+    // box-shadow: inset 0.5px 0.5px 1px 2px rgba(0,0,0,0.1)
+    box-shadow: inset 0px 0px 10px -1px #00000028
+  &::after
+    content: ''
+    position: absolute
+    width: calc(100% + 40px)
+    height: calc(100% + 40px)
+    top: -20px
+    left: -20px
+    z-index: -1
+    border-radius: 50%
+    box-shadow: 0px 0px 10px -1px #00000028
+
+@each $name, $value in $colors
+  .icon--#{$name}
+    background: $value 
+
+.icon-edit, .icon-user_friendly, .icon-layer, .icon-setting
+  font-size: 2.2rem
+  color: #fff
+
+.card__info
+  color: #414040
+  text-align: center
+  padding: 25px 0
+  line-height: 18px
